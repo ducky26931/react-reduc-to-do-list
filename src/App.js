@@ -3,12 +3,10 @@ import React from 'react';
 import './App.css';
 import AddItem from './Component/AddItem';
 import ItemList from './Component/ItemList';
-import EditItem from './Component/EditItem';
 
-export default ({name, list, listEdit}) => (
+export default ({name, list}) => (
   <div>
     <AddItem value={name} />
     <ItemList list={list} />
-    <EditItem listEdit={listEdit} />
   </div>
 );

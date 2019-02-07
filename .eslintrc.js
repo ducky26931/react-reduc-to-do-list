@@ -61,7 +61,7 @@ module.exports = {
         'quote-props': ['error', 'as-needed'],
         'arrow-body-style': ['error', 'as-needed'],
         'object-shorthand': 'error',
-        'prettier/prettier': ['error', { singleQuote: true, bracketSpacing: false }],
+        'prettier/prettier': ['warn', { singleQuote: true, bracketSpacing: false }],
         'immutable/no-let': 'error',
         'immutable/no-this': 'error',
         'immutable/no-mutation': 'error',

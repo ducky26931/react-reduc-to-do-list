@@ -1,10 +1,8 @@
 import React from 'react';
-import {Dispatch} from '..';
+import {Dispatch} from '../store.js';
 
 const changeText = event =>
   Dispatch({payload: event.target.value, type: 'changed text'});
-
-const hideAdd = () => Dispatch({type: 'enable editting'});
 
 const addToList = () => Dispatch({type: 'addToList'});
 
@@ -15,6 +13,5 @@ export default ({value}) => (
     <button id="submitBtn" onClick={addToList}>
       Submit
     </button>
-    <p> {value} </p>
   </div>
 );

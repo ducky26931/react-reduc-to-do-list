@@ -7,3 +7,5 @@ it('renders without crashing', () => {
   ReactDOM.render(<App />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
+
+// it + string + look up jest (mocha and chai is what we use on the actual project)

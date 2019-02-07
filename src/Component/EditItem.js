@@ -4,9 +4,7 @@ import {Dispatch} from '..';
 const EnableListEdit = () => Dispatch({type: 'enable editting'});
 const ListItem = ({value}) => <li>{value}</li>;
 const ItemList = ({list}) =>
-  list.map(value => (
-    <ListItem key={value.toString()} Billy="now" value={value} />
-  ));
+  list.map(value => <ListItem key={value.toString()} value={value} />);
 
 export default ({listEdit}) => (
   <div>
@@ -19,4 +17,3 @@ export default ({listEdit}) => (
     </ul>
   </div>
 );
-//////----------------------------------------------------
